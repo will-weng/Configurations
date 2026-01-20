@@ -1,0 +1,20 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = William Weng
+	email = 246209103+William-Weng_resmed@users.noreply.github.com
+
+[alias]
+	ac = !git add -A && git commit -m
+	diffall = difftool -d
+[pull]
+	rebase = true
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[merge]
+	tool = meld
