@@ -1,0 +1,48 @@
+Unix command
+ - Rename                               -> mv old_filename new_filename
+ - Remove folder content                -> rm -r <directory>
+ - Remove Empty folder                  -> rmdir <directory>
+
+Mac
+ - Show hidden files                    -> shift + cmd + .
+ - Move windows                         -> fn + ctrl + arrow key
+ - Open folder in new terminal tab      -> cmd + .
+ - End of page                          -> fn + right arrow
+ - Home/Top of page                     -> fn + left arrow
+ - Force close                          -> opt + cmd + esc
+ - Move Paste                           -> opt + cmd + v
+
+Vim
+ - Replace first in line                -> :s/pattern/replacement/
+   - Replace in file                    -> :%s///
+   - Replace all                        -> :s///g
+ - Edit next matching                   -> cgn
+ - Find text                            -> /pattern
+   - Find next                          -> n
+   - Find previous                      -> N
+ - Copy to clipboard                    -> "+y
+ - Navigate paragraphs                  -> { or }
+ - Delete around paragraph              -> dap
+ - delete till paragraph                -> d{ or d}
+ - visual block (multiple cursor)       -> ctrl v
+ - Record action                        -> q + <character>
+ - Replay action                        -> @ + <saved character>
+
+Intellij
+ - Reformat file                        -> opt + cmd + l
+ - Refactor imports                     -> ctrl + opt + o
+
+Git
+ - git config --global alias.<alias> '<Command>'
+ - Rename branch                        -> git branch -m <new-branch-name>
+ - Restore chages                       -> git restore <file/.>
+ - Cherry pick commits                  -> git cherry-pick --no-commit <commit-sha>
+ - Set upstream                         -> git b -u origin/<branch-name>
+ - git reset to origin                  -> git reset --hard origin/<branch-name>
+ - git show commit diff                 -> git show <commit-hash>
+
+Kubernetes:
+ - kubectl get pods -n <namespace>
+ - kubectl config get-contexts
+ - kubectl config use-context <name>
+ - kubectl describe pod <podname> -n dhp-shared-services
