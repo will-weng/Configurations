@@ -3,8 +3,17 @@
 	email = 
 
 [alias]
-	ac = !git add -A && git commit -m
-	diffall = difftool -d
+        ac = !git add -A && git commit -m
+        amc = !git add -A && git commit --amend --no-edit
+        ca = commit --amend
+        diffall = !git difftool -d --no-prompt &
+        pruned = !git fetch --prune && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -D
+        fpush = push --force-with-lease
+        s = status
+        l = log
+        c = checkout
+        b = branch
+        ri = rebase -i
 [pull]
 	rebase = true
 [diff]
